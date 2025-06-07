@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página sobre fauna en peligro de extinción y su protección" />
+  <title>Fauna en peligro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: url('imagenes/fondo_bosque.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      background-color: rgba(34, 87, 52, 0.85);
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+      letter-spacing: 2px;
+      color: #ffffff;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    nav a:hover {
+      background-color: #66bb6a;
+      transform: scale(1.05)
+    }
+
+    main {
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #333;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 1000px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #2e7d32;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      margin: 0.5rem auto;
+      width: 60px;
+      height: 4px;
+      background-color: #66bb6a;
+      border-radius: 2px;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 1.1rem;
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    .animal-animado {
+      width: 150px;
+      animation: caminar 4s infinite alternate;
+      display: block;
+      margin: 20px auto;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.4s ease;
+    }
+
+    .animal-animado:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes caminar {
+      from { transform: translateX(0); }
+      to { transform: translateX(300px); }
+    }
+
+    .galeria {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    #slideshow {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border: 2px solid #2e7d32;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: opacity 1s ease-in-out;
+    }
+
+    footer {
+      background-color: rgba(34, 87, 52, 0.85);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .tabla-vertical {
+      margin: 2rem auto;
+      background-color: #f0fdf4;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 600px;
+      color: #000;
+    }
+
+    .tabla-vertical th,
+    .tabla-vertical td {
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid #c8e6c9;
+      text-align: left;
+      font-size: 1rem;
+    }
+
+    .tabla-vertical th {
+      background-color: #c8e6c9;
+      width: 40%;
+      font-weight: bold;
+    }
+
+    .tabla-vertical td {
+      background-color: #ffffff;
+    }
+
+    .tabla-vertical tbody:not(:last-child) {
+      border-bottom: 2px solid #81c784;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Fauna Amenazada</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="fauna.html">Fauna</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Animales en Peligro de Extinción</h2>
+      <p>La pérdida acelerada de biodiversidad es una de las crisis más graves del siglo XXI.
+         Muchas especies animales se encuentran al borde de la extinción debido a la caza furtiva, el tráfico ilegal,
+         la destrucción de hábitats y el cambio climático. Protegerlas no solo es un deber ético, sino también una necesidad para mantener el equilibrio ecológico del planeta.</p>
+    </section>
+
+    <section>
+      <h2>Especies Amenazadas</h2>
+      <img src="imagenes/tigre_bengala.jpg" alt="Tigre de Bengala">
+      <p>El tigre es uno de los carnívoros más grandes del mundo. Puede pesar más de 300 kilogramos y alcanzar hasta 3,3 metros de longitud. 
+        Este gran felino antaño habitaba Asia, desde la costa oriental de Rusia hasta el mar Caspio.Sin embargo, desde principios del siglo XX ,
+        se estima que el 97 % de los tigres salvajes del mundo se han perdido. Actualmente quedan alrededor de 4500 ejemplares en libertad en toda Asia,
+        lo que convierte al tigre en una especie en peligro de extinción. El tigre real de Bengala es la subespecie de tigre más numerosa, 
+         representando aproximadamente la mitad de la población salvaje.
+        El Tigre de Bengala ha visto reducida su población por la pérdida de selvas y la caza para tráfico de partes de su cuerpo.</p>
+
+      <img src="imagenes/tortuga.jpg" alt="Tortuga marina">
+      <p>Las tortugas marinas enfrentan amenazas por la contaminación de los océanos, la pesca accidental y la destrucción de playas de anidación.
+        No son buenos titóricamente buscadas por su carne, piel, caparazón y huevos, ahora el cambio climático también representa una amenaza y
+        ha puesto en peligro de extinción a seis de las siete especies de tortugas marinas. El sexo de las crías de estos animales depende de la 
+        temperatura de la arena en la que ponen los huevos: la arena más caliente provoca el aumento de la proporción de crías hembra. Por tanto, 
+        el cambio climático es el culpable de una crisis en las proporciones de sexos de las tortugas marinas.</p>
+    </section>
+
+    <section>
+      <h2>Conciencia Ambiental</h2>
+      <p> Movimiento de la vida silvestre. Haz clic en la imagen.</p>
+
+      <a href="https://peru.wcs.org/" target="_blank">
+        <img src="imagenes/peligro.jpg" alt="Jaguar en peligro" class="animal-animado">
+      </a>
+
+      <div class="galeria">
+        <img id="slideshow" src="imagenes/jaguar.jpg" alt="Animal en peligro">
+      </div>
+    </section>
+
+    <section>
+      <h2>Especies con Poca Población</h2>
+      <p>Especies más afectadas</p>
+
+      <table class="tabla-vertical">
+        <tbody>
+          <tr><th>Especie</th><td>Tigre de Bengala</td></tr>
+          <tr><th>Tipo</th><td>Mamífero</td></tr>
+          <tr><th>Continente</th><td>Asia</td></tr>
+          <tr><th>Estado</th><td>En peligro</td></tr>
+        </tbody>
+        <tbody>
+          <tr><th>Especie</th><td>Oso Polar</td></tr>
+          <tr><th>Tipo</th><td>Mamífero</td></tr>
+          <tr><th>Continente</th><td>Ártico</td></tr>
+          <tr><th>Estado</th><td>Vulnerable</td></tr>
+        </tbody>
+        <tbody>
+          <tr><th>Especie</th><td>Rinoceronte Negro</td></tr>
+          <tr><th>Tipo</th><td>Mamífero</td></tr>
+          <tr><th>Continente</th><td>África</td></tr>
+          <tr><th>Estado</th><td>En peligro crítico</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Fauna y Medio Ambiente - Proyecto de Ernaldo</p>
+  </footer>
+
+  <script>
+    const imagenes = [
+      "imagenes/pe1.jpg",
+      "imagenes/pe2.jpg",
+      "imagenes/pe3.jpg",
+      "imagenes/pe4.jpg",
+      "imagenes/pe5.jpg",
+      "imagenes/pe6.jpg",
+      "imagenes/pe7.jpg",
+      "imagenes/pe8.jpg",
+      "imagenes/pe9.jpg",
+      "imagenes/pe10.jpg",
+      "imagenes/pe11.jpg",
+    ];
+
+    let indice = 0;
+    const slideshow = document.getElementById("slideshow");
+
+    setInterval(() => {
+      indice = (indice + 1) % imagenes.length;
+      slideshow.src = imagenes[indice];
+    }, 3000);
+  </script>
+</body>
+</html>
+

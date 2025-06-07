@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Página sobre el medio ambiente y la sostenibilidad.">
+  <title>Inicio - Medio Ambiente</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: url('imagenes/fondo_bosque.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      background-color: rgba(34, 87, 52, 0.85);
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    nav a:hover {
+      background-color: #66bb6a;
+      transform: scale(1.05);
+    }
+
+    main {
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #333;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 1000px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #2e7d32;
+      text-align: center;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #66bb6a;
+      display: block;
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 1.1rem;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 1rem auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    figcaption {
+      text-align: center;
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    footer {
+      background-color: rgba(0, 100, 0, 0.9);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    area {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1> Salvemos Nuestro Planeta</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="fauna.html">Fauna</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Por qué cuidar el medio ambiente?</h2>
+      <p>El medio ambiente es nuestro hogar común y la fuente esencial de recursos que sostienen la vida. Desde el aire que respiramos hasta el agua que bebemos, todo depende del equilibrio ecológico que debemos preservar. La destrucción de los ecosistemas no solo afecta a las especies animales y vegetales, sino que también pone en riesgo nuestra salud, economía y bienestar futuro.</p>
+      <figure>
+        <img src="imagenes/bosque.jpeg" alt="Bosque frondoso">
+        <figcaption>Bosque tropical amenazado por la deforestación.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Fuentes de Energía Renovable</h2>
+      <p>La energía renovable representa una alternativa limpia y sostenible frente a los combustibles fósiles. Fuentes como la solar, eólica e hidráulica no solo reducen la contaminación ambiental, sino que también promueven el desarrollo económico responsable. Adoptarlas es dar un paso firme hacia un futuro más verde y resiliente.</p>
+      <img src="imagenes/panel_solar.jpg" alt="Paneles solares generando energía.">
+    </section>
+
+    <section>
+      <h2>Explora más sobre el medio ambiente</h2>
+      <p>Haz clic en el mapa interactivo para conocer organizaciones que trabajan a favor de la sostenibilidad y cómo puedes involucrarte en campañas ambientales desde tu comunidad.</p>
+      <img src="imagenes/mapa_ecologico.jpg" alt="Mapa ecológico" usemap="#mapa" style="max-width:700px; border: 2px solid green;">
+      <map name="mapa">
+        <area shape="rect" coords="200,40,700,860" href="https://www.arbioperu.org/" target="_blank" alt="Greenpeace" title="Arbio">
+      </map>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Medio Ambiente</p>
+  </footer>
+</body>
+</html>
+
